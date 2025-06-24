@@ -1,21 +1,21 @@
 export const sampleProfiles = [
-    {
-      id: "profile_1",
-      name: "Luna Chen",
-      age: 28,
-      location: "San Francisco",
-      voiceCharacteristics: {
-        pitch: "medium-high",
-        pace: "moderate with thoughtful pauses",
-        energy: "calm but enthusiastic when discussing passions",
-        patterns: {
-          pauseFrequency: "high", // thinks before speaking
-          laughterStyle: "quiet, genuine chuckles",
-          fillerWords: ["hmm", "you know", "actually"],
-          emotionalRange: 0.7
-        }
+  {
+    id: "profile_1",
+    name: "Luna Chen",
+    age: 28,
+    location: "San Francisco",
+    voiceCharacteristics: {
+      pitch: "medium-high",
+      pace: "moderate with thoughtful pauses",
+      energy: "calm but enthusiastic when discussing passions",
+      patterns: {
+        pauseFrequency: "high", // thinks before speaking
+        laughterStyle: "quiet, genuine chuckles",
+        fillerWords: ["hmm", "you know", "actually"],
+        emotionalRange: 0.7,
       },
-      transcript: `
+    },
+    transcript: `
         My perfect weekend? Hmm... I'd probably start Saturday at the farmer's market - 
         not because I'm super healthy or anything, but there's something about the energy there, 
         you know? All these people who care about what they're creating. 
@@ -32,33 +32,47 @@ export const sampleProfiles = [
         We call it that ironically, but... we actually do end up debating consciousness and 
         free will over wine. Last time we spent three hours on whether AI can truly be creative.
       `,
-      personality: {
-        core_values: ["authenticity", "creativity", "intellectual curiosity", "mindfulness"],
-        interests: ["pottery", "hiking", "philosophy", "farmers markets", "reading"],
-        communication_style: "thoughtful and measured, asks deep questions, comfortable with silence",
-        emotional_patterns: "even-tempered with bursts of enthusiasm, introspective",
-        social_preferences: "small groups, meaningful conversations over small talk",
-        humor_style: "dry wit, philosophical observations, self-deprecating",
-        energy_type: "ambivert leaning introvert"
-      }
+    personality: {
+      core_values: [
+        "authenticity",
+        "creativity",
+        "intellectual curiosity",
+        "mindfulness",
+      ],
+      interests: [
+        "pottery",
+        "hiking",
+        "philosophy",
+        "farmers markets",
+        "reading",
+      ],
+      communication_style:
+        "thoughtful and measured, asks deep questions, comfortable with silence",
+      emotional_patterns:
+        "even-tempered with bursts of enthusiasm, introspective",
+      social_preferences:
+        "small groups, meaningful conversations over small talk",
+      humor_style: "dry wit, philosophical observations, self-deprecating",
+      energy_type: "ambivert leaning introvert",
     },
-    {
-      id: "profile_2",
-      name: "Marcus Rivera",
-      age: 31,
-      location: "Brooklyn",
-      voiceCharacteristics: {
-        pitch: "medium-low",
-        pace: "quick with animated bursts",
-        energy: "high, contagious enthusiasm",
-        patterns: {
-          pauseFrequency: "low", // stream of consciousness
-          laughterStyle: "frequent, hearty laughs",
-          fillerWords: ["like", "right?", "I mean"],
-          emotionalRange: 0.9
-        }
+  },
+  {
+    id: "profile_2",
+    name: "Marcus Rivera",
+    age: 31,
+    location: "Brooklyn",
+    voiceCharacteristics: {
+      pitch: "medium-low",
+      pace: "quick with animated bursts",
+      energy: "high, contagious enthusiasm",
+      patterns: {
+        pauseFrequency: "low", // stream of consciousness
+        laughterStyle: "frequent, hearty laughs",
+        fillerWords: ["like", "right?", "I mean"],
+        emotionalRange: 0.9,
       },
-      transcript: `
+    },
+    transcript: `
         Oh man, perfect weekend - okay, so Friday night I'm definitely hitting up this 
         underground jazz spot in Bed-Stuy. Like, you haven't lived until you've heard 
         live bebop at 2am, right? The musicians there are insane.
@@ -77,33 +91,47 @@ export const sampleProfiles = [
         and argue about movies. Last week I made shakshuka while defending why Spider-Verse 
         is literally the best film of the decade. Not just animated - best film, period.
       `,
-      personality: {
-        core_values: ["adventure", "community", "creative expression", "authenticity"],
-        interests: ["jazz music", "rock climbing", "graphic novels", "cooking", "film analysis"],
-        communication_style: "enthusiastic and expressive, storyteller, uses humor to connect",
-        emotional_patterns: "high energy with deep emotional intelligence, passionate",
-        social_preferences: "thrives in groups but values one-on-one connections",
-        humor_style: "animated storytelling, pop culture references, inclusive jokes",
-        energy_type: "extrovert with creative introvert moments"
-      }
+    personality: {
+      core_values: [
+        "adventure",
+        "community",
+        "creative expression",
+        "authenticity",
+      ],
+      interests: [
+        "jazz music",
+        "rock climbing",
+        "graphic novels",
+        "cooking",
+        "film analysis",
+      ],
+      communication_style:
+        "enthusiastic and expressive, storyteller, uses humor to connect",
+      emotional_patterns:
+        "high energy with deep emotional intelligence, passionate",
+      social_preferences: "thrives in groups but values one-on-one connections",
+      humor_style:
+        "animated storytelling, pop culture references, inclusive jokes",
+      energy_type: "extrovert with creative introvert moments",
     },
-    {
-      id: "profile_3",
-      name: "Zara Okafor",
-      age: 29,
-      location: "London",
-      voiceCharacteristics: {
-        pitch: "medium with melodic variations",
-        pace: "rhythmic, varies with emotion",
-        energy: "warm and grounded with sparks of mischief",
-        patterns: {
-          pauseFrequency: "medium", // dramatic effect
-          laughterStyle: "rich, throwing head back",
-          fillerWords: ["honestly", "literally", "wait"],
-          emotionalRange: 0.8
-        }
+  },
+  {
+    id: "profile_3",
+    name: "Zara Okafor",
+    age: 29,
+    location: "London",
+    voiceCharacteristics: {
+      pitch: "medium with melodic variations",
+      pace: "rhythmic, varies with emotion",
+      energy: "warm and grounded with sparks of mischief",
+      patterns: {
+        pauseFrequency: "medium", // dramatic effect
+        laughterStyle: "rich, throwing head back",
+        fillerWords: ["honestly", "literally", "wait"],
+        emotionalRange: 0.8,
       },
-      transcript: `
+    },
+    transcript: `
         Perfect weekend? Honestly, it starts with sleeping in until my cat decides otherwise. 
         Her name is Schrodinger - yes, I'm that person. *laughs* 
         
@@ -124,58 +152,152 @@ export const sampleProfiles = [
         African futurism. Imagine Black Panther meets Octavia Butler meets... my grandmother's 
         stories. It's about technology, but really it's about humanity.
       `,
-      personality: {
-        core_values: ["social justice", "community", "creativity", "authenticity", "growth"],
-        interests: ["writing", "cooking", "activism", "gardening", "afrofuturism", "philosophy"],
-        communication_style: "warm and engaging, switches between playful and profound",
-        emotional_patterns: "passionate with strong empathy, grounds others",
-        social_preferences: "builds community wherever she goes, natural connector",
-        humor_style: "clever wordplay, cultural observations, inclusive teasing",
-        energy_type: "social ambivert who recharges through creative solitude"
-      }
-    }
-  ];
-
+    personality: {
+      core_values: [
+        "social justice",
+        "community",
+        "creativity",
+        "authenticity",
+        "growth",
+      ],
+      interests: [
+        "writing",
+        "cooking",
+        "activism",
+        "gardening",
+        "afrofuturism",
+        "philosophy",
+      ],
+      communication_style:
+        "warm and engaging, switches between playful and profound",
+      emotional_patterns: "passionate with strong empathy, grounds others",
+      social_preferences:
+        "builds community wherever she goes, natural connector",
+      humor_style: "clever wordplay, cultural observations, inclusive teasing",
+      energy_type: "social ambivert who recharges through creative solitude",
+    },
+  },
+  {
+    id: "profile_21",
+    name: "Manon",
+    age: 27,
+    location: "Paris",
+    voiceCharacteristics: {
+      pitch: "medium-high",
+      pace: "moderate with thoughtful pauses",
+      energy: "calm but enthusiastic when discussing passions",
+      patterns: {
+        pauseFrequency: "high", // thinks before speaking
+        laughterStyle: "quiet, genuine chuckles",
+        fillerWords: ["hmm", "you know", "actually"],
+        emotionalRange: 0.7,
+      },
+    },
+    transcript: `
+        blablabla
+      `,
+    personality: {
+      core_values: ["authenticité", "curiosité", "bienveillance"],
+      interests: [
+        "activités manuelles",
+        "lecture",
+        "voyages",
+        "relations communautaires",
+      ],
+      communication_style:
+        "Expressive, sincère, et tournée vers les émotions. À l'aise avec les échanges authentiques.",
+      emotional_patterns:
+        "Exprime facilement ses émotions avec chaleur et vulnérabilité. Oriente ses relations vers l'écoute et la compréhension mutuelle.",
+      social_preferences:
+        "Cherche des connexions profondes et bienveillantes. Privilégie les échanges significatifs avec ses proches.",
+      humor_style:
+        "Tendre, bienveillant, souvent lié à l'observation du quotidien ou à des valeurs humaines.",
+      energy_type:
+        "Créative, chaleureuse, spontanée, avec une forte capacité à connecter émotionnellement avec les autres.",
+    },
+  },
+  {
+    id: "profile_22",
+    name: "Romain",
+    age: 38,
+    location: "Conflans",
+    voiceCharacteristics: {
+      pitch: "medium-low",
+      pace: "quick with animated bursts",
+      energy: "high, contagious enthusiasm",
+      patterns: {
+        pauseFrequency: "low", // stream of consciousness
+        laughterStyle: "frequent, hearty laughs",
+        fillerWords: ["like", "right?", "I mean"],
+        emotionalRange: 0.9,
+      },
+    },
+    transcript: `
+        blabla
+      `,
+    personality: {
+      core_values: ["authenticité", "curiosité", "bienveillance"],
+      interests: [
+        "activités manuelles",
+        "lecture",
+        "voyages",
+        "relations communautaires",
+      ],
+      communication_style:
+        "Expressive, sincère, et tournée vers les émotions. À l'aise avec les échanges authentiques.",
+      emotional_patterns:
+        "Exprime facilement ses émotions avec chaleur et vulnérabilité. Oriente ses relations vers l'écoute et la compréhension mutuelle.",
+      social_preferences:
+        "Cherche des connexions profondes et bienveillantes. Privilégie les échanges significatifs avec ses proches.",
+      humor_style:
+        "Tendre, bienveillant, souvent lié à l'observation du quotidien ou à des valeurs humaines.",
+      energy_type:
+        "Créative, chaleureuse, spontanée, avec une forte capacité à connecter émotionnellement avec les autres.",
+    },
+  },
+];
 
 // Voice feature extraction function
-export function extractVoiceFeatures(profile: typeof sampleProfiles[0]) {
-    const { voiceCharacteristics, transcript } = profile;
-    
-    // Analyze speaking patterns
-    const sentences = transcript.split(/[.!?]+/);
-    const avgSentenceLength = sentences.reduce((acc, s) => acc + s.split(' ').length, 0) / sentences.length;
-    
-    // Extract emotional indicators
-    const emotionalWords = transcript.match(/\*(.*?)\*/g) || [];
-    const questionCount = (transcript.match(/\?/g) || []).length;
-    
-    return {
-      speakingRate: voiceCharacteristics.pace,
-      pitchPattern: voiceCharacteristics.pitch,
-      energyLevel: extractEnergyLevel(voiceCharacteristics.energy),
-      pausePatterns: voiceCharacteristics.patterns.pauseFrequency,
-      sentenceComplexity: avgSentenceLength > 15 ? 'complex' : 'simple',
-      emotionalExpression: emotionalWords.length,
-      questioningTendency: questionCount / sentences.length,
-      laughterFrequency: voiceCharacteristics.patterns.laughterStyle,
-      conversationDynamics: {
-        fillerWords: voiceCharacteristics.patterns.fillerWords,
-        emotionalRange: voiceCharacteristics.patterns.emotionalRange
-      }
-    };
-  }
-  
-  function extractEnergyLevel(energyDescription: string): number {
-    const highEnergyWords = ['high', 'enthusiastic', 'animated', 'contagious'];
-    const lowEnergyWords = ['calm', 'quiet', 'measured', 'grounded'];
-    
-    let score = 0.5; // neutral
-    highEnergyWords.forEach(word => {
-      if (energyDescription.toLowerCase().includes(word)) score += 0.1;
-    });
-    lowEnergyWords.forEach(word => {
-      if (energyDescription.toLowerCase().includes(word)) score -= 0.1;
-    });
-    
-    return Math.max(0, Math.min(1, score));
-  }
+export function extractVoiceFeatures(profile: (typeof sampleProfiles)[0]) {
+  const { voiceCharacteristics, transcript } = profile;
+
+  // Analyze speaking patterns
+  const sentences = transcript.split(/[.!?]+/);
+  const avgSentenceLength =
+    sentences.reduce((acc, s) => acc + s.split(" ").length, 0) /
+    sentences.length;
+
+  // Extract emotional indicators
+  const emotionalWords = transcript.match(/\*(.*?)\*/g) || [];
+  const questionCount = (transcript.match(/\?/g) || []).length;
+
+  return {
+    speakingRate: voiceCharacteristics.pace,
+    pitchPattern: voiceCharacteristics.pitch,
+    energyLevel: extractEnergyLevel(voiceCharacteristics.energy),
+    pausePatterns: voiceCharacteristics.patterns.pauseFrequency,
+    sentenceComplexity: avgSentenceLength > 15 ? "complex" : "simple",
+    emotionalExpression: emotionalWords.length,
+    questioningTendency: questionCount / sentences.length,
+    laughterFrequency: voiceCharacteristics.patterns.laughterStyle,
+    conversationDynamics: {
+      fillerWords: voiceCharacteristics.patterns.fillerWords,
+      emotionalRange: voiceCharacteristics.patterns.emotionalRange,
+    },
+  };
+}
+
+function extractEnergyLevel(energyDescription: string): number {
+  const highEnergyWords = ["high", "enthusiastic", "animated", "contagious"];
+  const lowEnergyWords = ["calm", "quiet", "measured", "grounded"];
+
+  let score = 0.5; // neutral
+  highEnergyWords.forEach((word) => {
+    if (energyDescription.toLowerCase().includes(word)) score += 0.1;
+  });
+  lowEnergyWords.forEach((word) => {
+    if (energyDescription.toLowerCase().includes(word)) score -= 0.1;
+  });
+
+  return Math.max(0, Math.min(1, score));
+}
