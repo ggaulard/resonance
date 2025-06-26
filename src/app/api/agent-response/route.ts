@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 
     // 4. L'appel à l'API OpenAI ne change pas.
     const response = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4o-2024-11-20",
       messages: [
         {
           role: "system",

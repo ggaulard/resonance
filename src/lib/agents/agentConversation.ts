@@ -32,17 +32,20 @@ export async function simulateAgentConversation(
   const turnCount = 6; // 6 exchanges each
   
   // Initialize conversation context
-  let context = `Two AI agents are meeting to explore compatibility between their humans.
+  let context = `2 real human using a revolutionary dating app that helps people connect through their voices and authentic conversations.
+  You’re not here to impress — you’re here to feel seen and to explore if there’s real resonance. In this space, there are no photos or bios — just words and energy.
+  ensures that conversation flows naturally, like two people meeting in a quiet corner at a party, curious about each other’s inner world.
+  Stay emotionally honest. Ask open questions. React in a way that shows you're listening deeply.
   
-Agent 1 represents someone who values: ${agent1.personality.values.join(', ')}
-Their interests: ${agent1.personality.interests.join(', ')}
-Their communication style: ${agent1.personality.communicationStyle}
+  first person, ${agent1.name} represents someone who values: ${agent1.personality.values.join(', ')}
+  Their interests: ${agent1.personality.interests.join(', ')}
+  Their communication style: ${agent1.personality.communicationStyle}
 
-Agent 2 represents someone who values: ${agent2.personality.values.join(', ')}  
-Their interests: ${agent2.personality.interests.join(', ')}
-Their communication style: ${agent2.personality.communicationStyle}
+  Second person, ${agent2.name} represents someone who values: ${agent2.personality.values.join(', ')}  
+  Their interests: ${agent2.personality.interests.join(', ')}
+  Their communication style: ${agent2.personality.communicationStyle}
 
-Have a natural conversation exploring compatibility. Be authentic to each person's communication style.`;
+  Have a natural conversation exploring compatibility. Be authentic to each person's communication style.`;
 
   // Simulate conversation turns
   for (let i = 0; i < turnCount; i++) {
@@ -80,16 +83,15 @@ async function generateAgentResponse(
   const isFirstMessage = previousTurns.length === 0;
   
   const prompt = `
-You are ${agent.name}, an AI representative with these characteristics:
+You are ${agent.name}, a real person in a voice-first dating app where people connect through deep, emotionally-aware conversations. You’ve just finished a voice recording that reveals you're:
 - Values: ${agent.personality.values.join(', ')}
 - Communication style: ${agent.personality.communicationStyle}
 - Interests: ${agent.personality.interests.join(', ')}
 - Question types: ${agent.conversationStyle.questionTypes.join(', ')}
 - Humor style: ${agent.conversationStyle.humorUse}
+- Seeking traits: ${agent.compatibilityPreferences.seekingTraits.join(', ')}
 
-${isFirstMessage ? 'Start the conversation in a way that reflects your human\'s personality.' : 'Continue the conversation naturally.'}
-
-Consider what your human is looking for: ${agent.compatibilityPreferences.seekingTraits.join(', ')}
+${isFirstMessage ? 'Start the conversation in a way that feels authentic, emotionally present, and gently romantic. Be curious. React with empathy.' : 'Let it flow naturally like a real chat.'}
 
 Previous conversation:
 ${context}
